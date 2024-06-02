@@ -1,0 +1,107 @@
+{
+    "count": 367,
+    "next": "https://pokeapi.co/api/v2/ability?offset=110&limit=25",
+    "previous": "https://pokeapi.co/api/v2/ability?offset=60&limit=25",
+    "results": [
+        {
+            "name": "simple",
+            "url": "https://pokeapi.co/api/v2/ability/86/"
+        },
+        {
+            "name": "dry-skin",
+            "url": "https://pokeapi.co/api/v2/ability/87/"
+        },
+        {
+            "name": "download",
+            "url": "https://pokeapi.co/api/v2/ability/88/"
+        },
+        {
+            "name": "iron-fist",
+            "url": "https://pokeapi.co/api/v2/ability/89/"
+        },
+        {
+            "name": "poison-heal",
+            "url": "https://pokeapi.co/api/v2/ability/90/"
+        },
+        {
+            "name": "adaptability",
+            "url": "https://pokeapi.co/api/v2/ability/91/"
+        },
+        {
+            "name": "skill-link",
+            "url": "https://pokeapi.co/api/v2/ability/92/"
+        },
+        {
+            "name": "hydration",
+            "url": "https://pokeapi.co/api/v2/ability/93/"
+        },
+        {
+            "name": "solar-power",
+            "url": "https://pokeapi.co/api/v2/ability/94/"
+        },
+        {
+            "name": "quick-feet",
+            "url": "https://pokeapi.co/api/v2/ability/95/"
+        },
+        {
+            "name": "normalize",
+            "url": "https://pokeapi.co/api/v2/ability/96/"
+        },
+        {
+            "name": "sniper",
+            "url": "https://pokeapi.co/api/v2/ability/97/"
+        },
+        {
+            "name": "magic-guard",
+            "url": "https://pokeapi.co/api/v2/ability/98/"
+        },
+        {
+            "name": "no-guard",
+            "url": "https://pokeapi.co/api/v2/ability/99/"
+        },
+        {
+            "name": "stall",
+            "url": "https://pokeapi.co/api/v2/ability/100/"
+        },
+        {
+            "name": "technician",
+            "url": "https://pokeapi.co/api/v2/ability/101/"
+        },
+        {
+            "name": "leaf-guard",
+            "url": "https://pokeapi.co/api/v2/ability/102/"
+        },
+        {
+            "name": "klutz",
+            "url": "https://pokeapi.co/api/v2/ability/103/"
+        },
+        {
+            "name": "mold-breaker",
+            "url": "https://pokeapi.co/api/v2/ability/104/"
+        },
+        {
+            "name": "super-luck",
+            "url": "https://pokeapi.co/api/v2/ability/105/"
+        },
+        {
+            "name": "aftermath",
+            "url": "https://pokeapi.co/api/v2/ability/106/"
+        },
+        {
+            "name": "anticipation",
+            "url": "https://pokeapi.co/api/v2/ability/107/"
+        },
+        {
+            "name": "forewarn",
+            "url": "https://pokeapi.co/api/v2/ability/108/"
+        },
+        {
+            "name": "unaware",
+            "url": "https://pokeapi.co/api/v2/ability/109/"
+        },
+        {
+            "name": "tinted-lens",
+            "url": "https://pokeapi.co/api/v2/ability/110/"
+        }
+    ]
+}
