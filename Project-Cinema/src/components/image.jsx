@@ -4,7 +4,7 @@ function Image(props) {
     const {src,alt}=props;
     // Recuerda que este es solo un componente funcional, 
     // tu debes incluir estilos para hacerlo más atractivo
-    return <img src={props.src} alt={props.alt} style={{ borderRadius: '50%', width: '180px', height: '180px' }} />;
+    return <img src={props.src} alt={props.alt} style={{ borderRadius: '50%', width: '90px', height: '90px' }} />;
   }
 
 /*const Image = ({ src, alt }) => {

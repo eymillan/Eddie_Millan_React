@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: Cambria,cursive;
 }
-
+.container{
+  display: flex;
+  align-items: center;
+  background-color: rgb(225, 235, 231);
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .card{
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
-  max-width: 300px;
-  margin:auto;
-  border: solid 3px rgb(0, 255, 255);
+  max-width: 130px;
+  max-height: 175px;
+  margin:10px 10px;
+  border: solid 2px rgb(208, 239, 239);
   background-color: #20232a;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: white;
   
@@ -23,13 +26,54 @@ body {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-.card-title {
+.title {
   font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #61dafb;
+  margin:auto;
+  text-align: center;
+  color: #000000;
 }
-h2 {
-  margin: 10px 0;
+.button {
+  margin: 0px 5px 5px 5px;
+  margin-bottom: 0px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #00ff00, #00aaff);
+  border: 3px solid #000000;
+  padding: 8px 8px;
+  border-radius: 12px;
+  text-shadow: 2px 2px #000000;
+  box-shadow: 5px 5px 0 #0000003a;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0 #0000003a;
+}
+.button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #0000003a;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente si el contenedor tiene altura definida */
+}
+.image-container{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image{
+  max-width: 20%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  text-align: center;
+  }
+p{
+  margin: 0;
+}
+h4{
+  margin:0 0 5px 0;
 }
