@@ -1,14 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-body {
-  font-family: Cambria,cursive;
+.App {
+  font-family: Cambria, cursive;
+  margin: 12px;
 }
-.container{
+.image-container{
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0%;
+}
+.image{
+  max-width: 25%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  text-align: center;
+  margin-top: 0px;
+  }
+.filters {
   display: flex;
-  align-items: center;
-  background-color: rgb(225, 235, 231);
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 10px auto;
 }
+
+.filters input,
+.filters select {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
 .card{
   border-radius: 10px;
   padding: 20px;
@@ -29,10 +48,10 @@ body {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 .title {
-  font-size: 1.8em;
+  font-size: 1em;
   margin:auto;
   text-align: center;
-  color: #000000;
+  color: #00ff00;
 }
 .button {
   margin: 0px 5px 5px 5px;
@@ -62,15 +81,38 @@ body {
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente si el contenedor tiene altura definida */
 }
-.image-container{
-  text-align: center;
-  margin-bottom: 20px;
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  background-color: rgb(225, 235, 231);
 }
-.image{
-  max-width: 20%; /* Asegurar que la imagen no exceda el ancho del contenedor */
-  height: auto; /* Mantener la proporción de la imagen */
+
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
   text-align: center;
-  }
+}
+
+.character-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.number{
+  text-align: center;
+}
+.error {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 p{
   margin: 0;
 }
