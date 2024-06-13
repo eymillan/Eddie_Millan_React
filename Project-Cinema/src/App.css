@@ -151,26 +151,8 @@ h4{
 }
 .navigation-links {
   margin-top: 0px;
+  display: flex;
   text-align: center;
-}
-
-.navigation-links .button {
-  padding: 5px 8px;
-  border-radius: 5px;
-  border: none;
-  background-color: #61dafb;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  display:inline-block;
-  justify-content: space-between;
-  margin: 0px;
-  row-gap: 20px;
-}
-
-.navigation-links .button:hover {
-  background-color: #21a1f1;
-
 }
 .logo-container {
   text-align:center;

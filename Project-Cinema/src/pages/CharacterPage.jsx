@@ -61,7 +61,7 @@ function CharacterPage() {
     return (
       <div className='App'>
         <div className='navigation-links'>
-          <Link to="/" className='logo-container'>
+          <Link to="/">
             <img src={logo} alt="Home" className='button'/>
           </Link>
           <Link to="/">

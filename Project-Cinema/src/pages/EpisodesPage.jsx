@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Card from '../components/characterCard';
+import CardEpisode from '../components/EpisodeCard';
 import myImage from '../assets/RickAndMorty.png';
 import logo from '../assets/LogoHome.png'
 
@@ -52,16 +52,16 @@ function EpisodesPage() {
             <button className='button'>Personajes</button>          
           </Link>           
         </div>
-      <div className="number">
+      <div className='number'>
         <h4>Episodios encontrados: {totalEpisodes}</h4>
         {error && <p className="error">{error}</p>}
       </div>
       <div>
         {!error && <Navbar currentPage={page} setPage={setPage} lastPage={info.pages} />}
       </div>
-      <div className="character-list">
+      <div className='character-list'>
         {episodesList.length !== 0 && episodesList.map((episode) => (
-            <Card key={episode.id} name={episode.name} airDate={episode.airDate}
+            <CardEpisode key={episode.id} name={episode.name} air_date={episode.air_date}
             episode={episode.episode}/>
         ))}
       </div>     

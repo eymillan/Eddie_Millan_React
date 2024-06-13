@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from './title';
-import Details from './details';
+import DetailsEpisode from './DetailsEpisode';
 
-function EpisodeCard({ name, airDate, episode }) {
+function EpisodeCard({ name, air_date, episode }) {
   return (
     <div className="card">
       <Title name={name} />
-      <Details airDate={airDate} episode={episode} />
+      <DetailsEpisode air_date={air_date} episode={episode} />
     </div>
   );
 }
