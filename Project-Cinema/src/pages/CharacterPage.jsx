@@ -1,16 +1,18 @@
-import { useState,useEffect } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import '../App.css';
 import Card from '../components/characterCard';
 import { Link } from 'react-router-dom';
+import FilterContext from '../contexts/FilterContext';
 import Navbar from '../components/Navbar';
 import myImage from '../assets/RickAndMorty.png';
 import logo from '../assets/LogoHome.png';
 
 
 function CharacterPage() {
-    const [nameFilter, setNameFilter] = useState('');
-    const [genderFilter, setGenderFilter] = useState('');
-    const [speciesFilter,setSpeciesFilter]=useState('');
+    const { filters, setFilters } = useContext(FilterContext);
+    const [nameFilter, setNameFilter] = useState(filters.name || '');
+    const [genderFilter, setGenderFilter] = useState(filters.gender || '');
+    const [speciesFilter, setSpeciesFilter] = useState(filters.species || '');   
     const [charactersList, setCharactersList] = useState([]);
     const [totalCharacters, setTotalCharacters] = useState(0);
     const [page, setPage] = useState(1);
@@ -19,21 +21,19 @@ function CharacterPage() {
   
     useEffect(() => {
       fetchCharacters();
-    }, [page]);
+    }, [page,filters]);
   
     const fetchCharacters = () => {
       const filterParams = new URLSearchParams({
-        name: nameFilter,
-        gender: genderFilter,
-        species: speciesFilter,
+        name: filters.name,
+        gender: filters.gender,
+        species: filters.species,
         page: page,
       });  
       fetch("https://rickandmortyapi.com/api/character/?" + filterParams)
         .then((response) => response.json())
         .then((data) => {
-          if(data.results){
-            const speciesSet = new Set(data.results.map(character => character.species));
-            console.log([...speciesSet]);
+          if(data.results){            
             setCharactersList(data.results);
             setInfo(data.info);
             setTotalCharacters(data.info.count);
@@ -54,10 +54,14 @@ function CharacterPage() {
     };
   
     const onSearch = () => {
-      setPage(1); 
-      fetchCharacters();      
+      setPage(1);
+      setFilters({
+        name: nameFilter,
+        gender: genderFilter,
+        species: speciesFilter,
+      });     
     };  
-      
+    
     return (
       <div className='App'>
         <div className='navigation-links'>
@@ -117,7 +121,7 @@ function CharacterPage() {
         
         <div className="character-list">
           {charactersList.lenght !==0 && charactersList.map((char) => (
-            <Card key={char.id} name={char.name} image={char.image}
+            <Card key={char.id} name ={char.name} image={char.image}
             alt={char.name} status={char.status} gender={char.gender}/>
           ))}
         </div>
