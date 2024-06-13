@@ -2,6 +2,7 @@
 .App {
   font-family: Cambria, cursive;
   margin: 12px;
+  background-color:white
 }
 .image-container{
   text-align: center;
@@ -78,7 +79,7 @@
 }
 .button-container {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content:left; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente si el contenedor tiene altura definida */
 }
 
@@ -87,7 +88,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content:center;
-  background-color: rgb(225, 235, 231);
+  background-color: rgb(236, 243, 240);
 }
 
 .character-card {
@@ -119,3 +120,66 @@ p{
 h4{
   margin:0 0 5px 0;
 }
+.home-page {
+  background-image: url('./assets/RickAndMorty.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+.banner {
+  background-color: #d5e6d5;
+  color: white;
+  padding: 10px 20px 80px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  color: #5e5e3a;
+  font-size: 2.5em;
+}
+
+.banner button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.navigation-links {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.navigation-links .button {
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #61dafb;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display:inline-block;
+  justify-content: space-between;
+  margin: 0px;
+  row-gap: 20px;
+}
+
+.navigation-links .button:hover {
+  background-color: #21a1f1;
+
+}
+.logo-container {
+  text-align:center;
+  margin-top: 0px;
+}
+
+.logo {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
